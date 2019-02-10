@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hackathon4.SignUpController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="setEmail" layoutX="219.0" layoutY="180.0" promptText="Email:" />
+            <TextField fx:id="setUser" layoutX="219.0" layoutY="224.0" promptText="Username:" />
+            <Button fx:id="newAccount" layoutX="246.0" layoutY="349.0" mnemonicParsing="false" onAction="#makeNewAcc" text="Create Account" />
+            <PasswordField fx:id="password" layoutX="219.0" layoutY="264.0" promptText="Password:" />
+            <PasswordField fx:id="passConfirm" layoutX="219.0" layoutY="303.0" promptText="Retype Password:" />
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="193.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

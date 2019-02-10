@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hackathon4.ProfilePageController">
+   <children>
+      <AnchorPane prefHeight="412.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="fieldinterests" layoutX="187.0" layoutY="54.0" prefHeight="108.0" prefWidth="200.0" promptText="Bio/Interests:" />
+            <TextField fx:id="fieldAge" layoutX="187.0" layoutY="202.0" prefHeight="27.0" prefWidth="200.0" promptText="Age:" />
+            <TextField fx:id="fieldLocation" layoutX="187.0" layoutY="235.0" prefHeight="27.0" prefWidth="200.0" promptText="Location:" />
+            <Text fx:id="locationInfo" layoutX="9.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will not be visible to other users without your permission!" wrappingWidth="186.20263671875" />
+            <Text layoutX="234.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make your profile!" />
+            <Text fx:id="interestsInfo" layoutX="21.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will help us match you!" wrappingWidth="149.20263671875" />
+            <Button fx:id="submitButton" layoutX="256.0" layoutY="359.0" mnemonicParsing="false" onAction="#makeProfile" text="Submit" />
+            <ComboBox fx:id="genderBox" layoutX="189.0" layoutY="167.0" prefHeight="27.0" prefWidth="200.0" promptText="Gender" />
+            <TextArea fx:id="disablities" layoutX="185.0" layoutY="298.0" prefHeight="58.0" prefWidth="211.0" promptText="Please list any disablities that you have. If you have none please put N/A" />
+            <TextField fx:id="contactInfo" layoutX="189.0" layoutY="267.0" prefHeight="27.0" prefWidth="200.0" promptText="Contact Number:" />
+            
+            <Text layoutX="433.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add profile image" />
+            <ImageView fx:id="addProfileimage" fitHeight="108.0" fitWidth="149.0" layoutX="427.0" layoutY="44.0" onMouseClicked="#addImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:resources/Pebble.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

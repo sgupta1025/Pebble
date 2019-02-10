@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hackathon4.MatchesController">
+   <children>
+      <AnchorPane prefHeight="418.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="262.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Matches!" />
+            <ImageView fx:id="user1Image" fitHeight="95.0" fitWidth="151.0" layoutX="62.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Photos%20Library.photoslibrary/Masters/2018/08/11/20180811-133811/I-take-black-white-photographs-of-Garden-flowers-to-show-the-beautiful-symmetry-of-nature4__880.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="user2Image" fitHeight="116.0" fitWidth="142.0" layoutX="62.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Photos%20Library.photoslibrary/Masters/2018/08/10/20180810-012447/IMG_8187.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="user3image" fitHeight="101.0" fitWidth="142.0" layoutX="62.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Photos%20Library.photoslibrary/resources/media/version/05/00/fullsizeoutput_509.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="messageBtn1" layoutX="233.0" layoutY="95.0" mnemonicParsing="false" onAction="#contactUser" text="Message" />
+            <Button fx:id="messageBtn2" layoutX="233.0" layoutY="196.0" mnemonicParsing="false" text="Message" />
+            <Button fx:id="messageBtn3" layoutX="234.0" layoutY="299.0" mnemonicParsing="false" text="Message" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
